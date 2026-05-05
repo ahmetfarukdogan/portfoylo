@@ -1,0 +1,854 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ahmet Faruk Doğan — AI Araştırmacısı</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <script>if(history.scrollRestoration)history.scrollRestoration='manual';window.scrollTo(0,0);</script>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,700;0,9..144,900;1,9..144,300;1,9..144,700&family=Space+Grotesk:wght@300;400;500;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- CURSOR -->
+  <!-- GRAIN OVERLAY -->
+  <div class="grain"></div>
+
+  <!-- LOADER -->
+  <div id="loader">
+    <div class="loader-bar"></div>
+    <span class="loader-text">AFD</span>
+  </div>
+
+  <!-- NAV -->
+  <nav id="nav">
+    <a href="#" class="nav-brand">Ahmet Faruk<br><em>Doğan</em></a>
+    <div class="nav-center">
+      <a href="#isbirligi" class="nav-status"><span class="pulse"></span>Açık İş Birlikleri</a>
+    </div>
+    <div class="nav-right">
+      <a href="#hakkimda" class="nav-link">Hakkımda</a>
+      <a href="#projeler" class="nav-link">Projeler</a>
+      <a href="#deneyim" class="nav-link">Deneyim</a>
+      <a href="#beceriler" class="nav-link">Beceriler</a>
+      <a href="#sertifikalar" class="nav-link">Sertifikalar</a>
+      <button id="themeToggle" class="theme-toggle" aria-label="Tema değiştir" title="Karanlık/Aydınlık">
+        <svg class="ico-sun"  viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+        <svg class="ico-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3a7 7 0 0 0 9.79 9.79z"/></svg>
+      </button>
+      <a href="#iletisim" class="btn-nav magnetic">İletişim</a>
+    </div>
+    <button class="hamburger" id="hamburger" aria-label="Menü">
+      <span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="#hakkimda" class="mobile-link">Hakkımda</a>
+    <a href="#projeler" class="mobile-link">Projeler</a>
+    <a href="#deneyim" class="mobile-link">Deneyim</a>
+    <a href="#beceriler" class="mobile-link">Beceriler</a>
+    <a href="#sertifikalar" class="mobile-link">Sertifikalar</a>
+    <a href="#isbirligi" class="mobile-link">İş Birlikleri</a>
+    <a href="#iletisim" class="mobile-link">İletişim</a>
+  </div>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-eyebrow">
+      <span class="line-h"></span>
+      <span>01 / Bursa, Türkiye</span>
+    </div>
+
+    <div class="hero-headline">
+      <div class="headline-row row-1">
+        <span class="char-big split-text">AHMET</span>
+        <div class="hero-badge">
+          <span>İktisat</span>
+          <span class="badge-sep">×</span>
+          <span>Yapay Zeka</span>
+        </div>
+      </div>
+      <div class="headline-row row-2">
+        <span class="char-big italic split-text">Faruk</span>
+        <span class="char-big split-text">DOĞAN</span>
+      </div>
+    </div>
+
+    <div class="hero-bottom">
+      <p class="hero-desc split-text">
+        Uludağ İktisat öğrencisi · satış, dijital pazarlama<br>
+        ve girişimcilik alanlarında saha deneyimi.
+      </p>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-num" data-count="4">0</span>
+          <span class="stat-label">AI Projesi</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num" data-count="2025">0</span>
+          <span class="stat-label">Başlangıç</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num" data-count="100">0</span>
+          <span class="stat-label">% Yapay Zeka Odağı</span>
+        </div>
+      </div>
+      <div class="hero-cta">
+        <a href="#projeler" class="btn-primary magnetic">Projeleri Keşfet <span class="arrow">↗</span></a>
+        <a href="mailto:faruk.33ahmet@gmail.com" class="btn-outline magnetic">E-posta</a>
+      </div>
+      <nav class="hero-nav">
+        <a href="#hakkimda" class="hero-nav-btn">Hakkımda</a>
+        <a href="#projeler" class="hero-nav-btn">Projeler</a>
+        <a href="#deneyim" class="hero-nav-btn">Deneyim</a>
+        <a href="#beceriler" class="hero-nav-btn">Beceriler</a>
+        <a href="#sertifikalar" class="hero-nav-btn">Sertifikalar</a>
+        <a href="#iletisim" class="hero-nav-btn">İletişim</a>
+      </nav>
+    </div>
+
+    <div class="hero-scroll-hint">
+      <span>Kaydır</span>
+      <div class="scroll-line"></div>
+    </div>
+
+  </section>
+
+  <!-- MARQUEE -->
+  <div class="marquee-wrap">
+    <div class="marquee-track">
+      <span>Ahmet Faruk Doğan</span><span class="sep">★</span>
+      <span>Bursa, Türkiye</span><span class="sep">—</span>
+      <span>İktisat × Yapay Zeka</span><span class="sep">—</span>
+      <span>Claude API</span><span class="sep">—</span>
+      <span>Anthropic</span><span class="sep">—</span>
+      <span>Prompt Mühendisliği</span><span class="sep">—</span>
+      <span>Claude Code</span><span class="sep">—</span>
+      <span>Claude Code Alt Ajanları</span><span class="sep">—</span>
+      <span>Büyük Dil Modelleri</span><span class="sep">—</span>
+      <span>LLM Entegrasyonu</span><span class="sep">—</span>
+      <span>AI Etik</span><span class="sep">—</span>
+      <span>AI Fluency for Educators</span><span class="sep">—</span>
+      <span>AI Fluency for Students</span><span class="sep">—</span>
+      <span>Claude Code in Action</span><span class="sep">—</span>
+      <span>ULİNKA · Finans &amp; Sponsorluk Direktörü</span><span class="sep">—</span>
+      <span>Uludağ Üniversitesi · İktisat</span><span class="sep">—</span>
+      <span>UUİKT</span><span class="sep">—</span>
+      <span>Etkin Kampüs</span><span class="sep">—</span>
+      <span>Blue Ember</span><span class="sep">—</span>
+      <span>JetLid Kampüs Sorumluluğu</span><span class="sep">—</span>
+      <span>Satış Ortaklığı</span><span class="sep">—</span>
+      <span>TEGV Gönüllüsü</span><span class="sep">—</span>
+      <span>OSGİZ'26 Girişimcilik Zirvesi</span><span class="sep">—</span>
+      <span>14. Girişimcilik ve İnovasyon Zirvesi</span><span class="sep">—</span>
+      <span>GDG Bursa</span><span class="sep">—</span>
+      <span>Eğitim Symposium</span><span class="sep">—</span>
+      <span>Yapay Zeka Araçları</span><span class="sep">—</span>
+      <span>Pazarlama</span><span class="sep">—</span>
+      <span>Potansiyel Müşteri Bulma</span><span class="sep">—</span>
+      <span>İş İletişimleri</span><span class="sep">—</span>
+      <span>Yaratıcı İş</span><span class="sep">—</span>
+      <span>Gönüllü Çalışma</span><span class="sep">—</span>
+      <span>Liderlik</span><span class="sep">—</span>
+      <span>Eleştirel Düşünce</span><span class="sep">—</span>
+      <span>Etkinlik Planlama</span><span class="sep">—</span>
+      <span>Markalar için Elçilik Yönetim Sistemi</span><span class="sep">—</span>
+      <span>Claude ile Profesyonel E-posta</span><span class="sep">—</span>
+      <span>Yapay Zeka ile Etik Çalışma Rehberi</span><span class="sep">—</span>
+      <span>4 AI Projesi</span><span class="sep">—</span>
+      <span>Başlangıç 2025</span><span class="sep">—</span>
+      <span>%100 Yapay Zeka Odağı</span><span class="sep">—</span>
+      <span>github.com/faruk33ahmet-doA</span><span class="sep">—</span>
+      <span>linkedin.com/in/ahmetfarukdogan</span><span class="sep">—</span>
+      <span>faruk.33ahmet@gmail.com</span><span class="sep">★</span>
+      <!-- duplicate for seamless loop -->
+      <span>Ahmet Faruk Doğan</span><span class="sep">★</span>
+      <span>Bursa, Türkiye</span><span class="sep">—</span>
+      <span>İktisat × Yapay Zeka</span><span class="sep">—</span>
+      <span>Claude API</span><span class="sep">—</span>
+      <span>Anthropic</span><span class="sep">—</span>
+      <span>Prompt Mühendisliği</span><span class="sep">—</span>
+      <span>Claude Code</span><span class="sep">—</span>
+      <span>Claude Code Alt Ajanları</span><span class="sep">—</span>
+      <span>Büyük Dil Modelleri</span><span class="sep">—</span>
+      <span>LLM Entegrasyonu</span><span class="sep">—</span>
+      <span>AI Etik</span><span class="sep">—</span>
+      <span>AI Fluency for Educators</span><span class="sep">—</span>
+      <span>AI Fluency for Students</span><span class="sep">—</span>
+      <span>Claude Code in Action</span><span class="sep">—</span>
+      <span>ULİNKA · Finans &amp; Sponsorluk Direktörü</span><span class="sep">—</span>
+      <span>Uludağ Üniversitesi · İktisat</span><span class="sep">—</span>
+      <span>UUİKT</span><span class="sep">—</span>
+      <span>Etkin Kampüs</span><span class="sep">—</span>
+      <span>Blue Ember</span><span class="sep">—</span>
+      <span>JetLid Kampüs Sorumluluğu</span><span class="sep">—</span>
+      <span>Satış Ortaklığı</span><span class="sep">—</span>
+      <span>TEGV Gönüllüsü</span><span class="sep">—</span>
+      <span>OSGİZ'26 Girişimcilik Zirvesi</span><span class="sep">—</span>
+      <span>14. Girişimcilik ve İnovasyon Zirvesi</span><span class="sep">—</span>
+      <span>GDG Bursa</span><span class="sep">—</span>
+      <span>Eğitim Symposium</span><span class="sep">—</span>
+      <span>Yapay Zeka Araçları</span><span class="sep">—</span>
+      <span>Pazarlama</span><span class="sep">—</span>
+      <span>Potansiyel Müşteri Bulma</span><span class="sep">—</span>
+      <span>İş İletişimleri</span><span class="sep">—</span>
+      <span>Yaratıcı İş</span><span class="sep">—</span>
+      <span>Gönüllü Çalışma</span><span class="sep">—</span>
+      <span>Liderlik</span><span class="sep">—</span>
+      <span>Eleştirel Düşünce</span><span class="sep">—</span>
+      <span>Etkinlik Planlama</span><span class="sep">—</span>
+      <span>Markalar için Elçilik Yönetim Sistemi</span><span class="sep">—</span>
+      <span>Claude ile Profesyonel E-posta</span><span class="sep">—</span>
+      <span>Yapay Zeka ile Etik Çalışma Rehberi</span><span class="sep">—</span>
+      <span>4 AI Projesi</span><span class="sep">—</span>
+      <span>Başlangıç 2025</span><span class="sep">—</span>
+      <span>%100 Yapay Zeka Odağı</span><span class="sep">—</span>
+      <span>github.com/faruk33ahmet-doA</span><span class="sep">—</span>
+      <span>linkedin.com/in/ahmetfarukdogan</span><span class="sep">—</span>
+      <span>faruk.33ahmet@gmail.com</span><span class="sep">★</span>
+    </div>
+  </div>
+
+  <!-- HAKKIMDA -->
+  <section id="hakkimda" class="reveal-section">
+    <div class="section-label">02 / Hakkımda</div>
+    <div class="about-layout">
+      <div class="about-pull">
+        <blockquote>
+          "Yapay zeka benim için bir araç değil —<br>
+          <em>bir dil.</em>"
+        </blockquote>
+        <div class="photo-stack-wrap">
+          <div class="photo-stack" id="photoStack">
+            <div class="photo-card" data-index="0">
+              <img src="photos/p1.jpg" alt="Ahmet Faruk Doğan — OSGİZ'26 Girişimcilik Zirvesi" />
+              <div class="photo-caption">OSGİZ'26 Girişimcilik Zirvesi</div>
+            </div>
+            <div class="photo-card" data-index="1">
+              <img src="photos/p2.jpg" alt="Ahmet Faruk Doğan — Eğitim Symposium" />
+              <div class="photo-caption">Eğitim Symposium · Ulinka</div>
+            </div>
+            <div class="photo-card" data-index="2">
+              <img src="photos/p3.jpg" alt="Ahmet Faruk Doğan — Ulinka" />
+              <div class="photo-caption">Ulinka — UUIKT</div>
+            </div>
+            <div class="photo-card" data-index="3">
+              <img src="photos/p4.jpg" alt="Ahmet Faruk Doğan — Ulinka Görevli" />
+              <div class="photo-caption">Ulinka · Görevli</div>
+            </div>
+            <div class="photo-card" data-index="4">
+              <img src="photos/p5.jpg" alt="Ahmet Faruk Doğan — Bursa Business Connect" />
+              <div class="photo-caption">Bursa Business Connect · 2026</div>
+            </div>
+          </div>
+          <div class="stack-hint">Tıkla <span>→</span></div>
+        </div>
+      </div>
+      <div class="about-body">
+        <p>
+          <strong>Uludağ Üniversitesi İktisat</strong> bölümü 1. sınıf öğrencisiyim.
+          Akademik hayatımın yanı sıra <strong>satış</strong>, <strong>dijital pazarlama</strong>
+          ve <strong>girişimcilik</strong> alanlarında saha deneyimi ediniyorum.
+        </p>
+        <p>
+          <em>Jetlid</em>, <em>Pan Creative Agency</em> ve
+          <em>Andromedy Digital Solutions</em>'da satış ve pazarlama süreçlerinde görev aldım.
+          <em>Campus Arc Elçisi</em> olarak üniversitemde girişimcilik ekosistemiyle
+          bağlantı kurdum.
+        </p>
+        <p>
+          Ekip çalışmasına ve sürekli gelişime önem veriyorum. Bağlantı kurmaktan
+          ve yeni fırsatlar keşfetmekten memnuniyet duyarım.
+        </p>
+        <div class="about-tags">
+          <div class="atag"><span class="atag-num">01</span>Satış</div>
+          <div class="atag"><span class="atag-num">02</span>Dijital Pazarlama</div>
+          <div class="atag"><span class="atag-num">03</span>Girişimcilik</div>
+          <div class="atag"><span class="atag-num">04</span>İktisat</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- PROJELER -->
+  <section id="projeler" class="reveal-section">
+    <div class="section-label">03 / Projeler</div>
+    <div class="section-head">
+      <h2>Seçilmiş<br><em>Çalışmalar</em></h2>
+      <a href="https://github.com/faruk33ahmet-doA" target="_blank" class="all-link">
+        Tümünü Gör <span>↗</span>
+      </a>
+    </div>
+
+    <div class="bento">
+
+      <article class="bento-card bento-wide">
+        <div class="card-num">01</div>
+        <div class="card-body">
+          <div class="card-icon">⚡</div>
+          <h3>Claude Code ile Yazılım Geliştirme</h3>
+          <p>Anthropic Academy — Claude Code in Action sertifikası kapsamında geliştirilen proje. Claude Code CLI kullanılarak kod analizi, hata ayıklama ve otomasyon senaryoları uygulandı.</p>
+        </div>
+        <div class="card-footer">
+          <div class="card-tags">
+            <span>Claude Code</span><span>Anthropic</span><span>Otomasyon</span>
+          </div>
+          <a href="https://github.com/faruk33ahmet-doA/Claude-Code-in-Action" target="_blank" class="card-link">
+            GitHub <span>↗</span>
+          </a>
+        </div>
+        <div class="card-hover-bg"></div>
+      </article>
+
+      <article class="bento-card bento-tall">
+        <div class="card-num">02</div>
+        <div class="card-body">
+          <div class="card-icon">⚖️</div>
+          <h3>Yapay Zeka ile Etik Çalışma Rehberi</h3>
+          <p>Anthropic Academy — AI Fluency: Framework & Foundations sertifikası kapsamında geliştirilen proje. Claude kullanılarak yapay zeka okuryazarlığı ve etik kullanım üzerine pratik senaryolar oluşturuldu.</p>
+        </div>
+        <div class="card-footer">
+          <div class="card-tags">
+            <span>AI Etik</span><span>Prompt Engineering</span><span>Claude</span>
+          </div>
+          <a href="https://github.com/faruk33ahmet-doA/Yapay-Zeka-ile-Etik-al-ma-Rehberi" target="_blank" class="card-link">
+            GitHub <span>↗</span>
+          </a>
+        </div>
+        <div class="card-hover-bg"></div>
+      </article>
+
+      <article class="bento-card bento-small">
+        <div class="card-num">03</div>
+        <div class="card-body">
+          <div class="card-icon">✉️</div>
+          <h3>Claude ile Profesyonel E-posta Yazma Rehberi</h3>
+          <p>Claude 101 sertifikası kapsamında geliştirildi. 5 farklı iş senaryosu için Türkçe e-posta şablonları: iş başvurusu takibi, toplantı erteleme, freelance teklif ve daha fazlası.</p>
+        </div>
+        <div class="card-footer">
+          <div class="card-tags">
+            <span>Prompt</span><span>Claude</span>
+          </div>
+          <a href="https://github.com/faruk33ahmet-doA/Claude-ile-Profesyonel-E-posta-Yazma-Rehberi" target="_blank" class="card-link">GitHub <span>↗</span></a>
+        </div>
+        <div class="card-hover-bg"></div>
+      </article>
+
+      <article class="bento-card bento-small">
+        <div class="card-num">04</div>
+        <div class="card-body">
+          <div class="card-icon">🤝</div>
+          <h3>Markalar için Elçilik Yönetim Sistemi</h3>
+          <p>Markaların elçilik programlarını planlı, takip edilebilir ve sürdürülebilir şekilde yürütmesini sağlayan sistem. Elçi başlatma, süreç takibi ve performans görünürlüğünü tek yapıda toplar.</p>
+        </div>
+        <div class="card-footer">
+          <div class="card-tags">
+            <span>Girişimcilik</span><span>Ambassador3.0</span>
+          </div>
+          <a href="https://github.com/faruk33ahmet-doA" target="_blank" class="card-link">GitHub <span>↗</span></a>
+        </div>
+        <div class="card-hover-bg"></div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- DENEYİM -->
+  <section id="deneyim" class="reveal-section">
+    <div class="section-label">04 / Deneyim</div>
+    <div class="section-head">
+      <h2>İş &amp;<br><em>Deneyimler</em></h2>
+    </div>
+
+    <div class="timeline">
+
+      <!-- UUIKT / Ulinka — 2 rol -->
+      <div class="tl-item">
+        <div class="tl-dot active"></div>
+        <div class="tl-content">
+          <div class="tl-meta">
+            <span class="tl-org">Uludağ Üniversitesi İnsan Kaynakları Topluluğu (Ulinka)</span>
+            <span class="tl-badge">Devam Ediyor</span>
+          </div>
+          <div class="tl-multi-role">
+            <div class="tl-role">
+              <h3 class="tl-title">Finans ve Sponsorluk Direktörü</h3>
+              <p class="tl-period">Nis 2026 — devam ediyor · Bursa</p>
+              <p class="tl-desc">Topluluk bünyesinde finans yönetimi ve sponsorluk süreçlerini direktör olarak yürütmekteyim.</p>
+              <div class="tl-tags"><span>Finans</span><span>Sponsorluk</span><span>Liderlik</span></div>
+            </div>
+            <div class="tl-role tl-role-sep">
+              <h3 class="tl-title">Aktif Üye</h3>
+              <p class="tl-period">Eki 2025 — Nis 2026 · 7 ay</p>
+              <div class="tl-tags"><span>Etkinlik Planlama</span><span>Eleştirel Düşünce</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pan Creative Agency -->
+      <div class="tl-item">
+        <div class="tl-dot"></div>
+        <div class="tl-content">
+          <div class="tl-meta">
+            <span class="tl-org">Pan Creative Agency</span>
+          </div>
+          <h3 class="tl-title">Satış &amp; Pazarlama</h3>
+          <p class="tl-period">2026 · Bursa</p>
+          <p class="tl-desc">Yaratıcı ajans bünyesinde satış ve pazarlama süreçlerinde görev alıyor; müşteri kazanımı, içerik üretim akışı ve kampanya yönetimine destek veriyorum.</p>
+          <div class="tl-tags"><span>Satış</span><span>Dijital Pazarlama</span><span>Marka</span></div>
+        </div>
+      </div>
+
+      <!-- Andromedy Digital Solutions -->
+      <div class="tl-item">
+        <div class="tl-dot"></div>
+        <div class="tl-content">
+          <div class="tl-meta">
+            <span class="tl-org">Andromedy Digital Solutions</span>
+          </div>
+          <h3 class="tl-title">Satış &amp; Pazarlama</h3>
+          <p class="tl-period">2026 · Bursa</p>
+          <p class="tl-desc">Dijital çözümler ajansında satış hattı yönetimi, müşteri ilişkileri ve pazarlama operasyonlarında aktif rol üstleniyorum.</p>
+          <div class="tl-tags"><span>Satış</span><span>Müşteri İlişkileri</span><span>Operasyon</span></div>
+        </div>
+      </div>
+
+      <!-- Jetlid -->
+      <div class="tl-item">
+        <div class="tl-dot"></div>
+        <div class="tl-content">
+          <div class="tl-meta"><span class="tl-org">Jetlid</span></div>
+          <h3 class="tl-title">Kampüs Sorumlusu · Satış &amp; Pazarlama</h3>
+          <p class="tl-period">Oca 2026 — Mar 2026 · 3 ay · Bursa, Uzaktan</p>
+          <p class="tl-desc">Uludağ Üniversitesi kampüsünde marka bilinirliğini artırmak için tanıtım stratejisi yürüttüm. 3 ayda 20+ öğrenciyle birebir iletişim kurdum.</p>
+          <div class="tl-tags"><span>Marka</span><span>Kampüs</span><span>Satış</span></div>
+        </div>
+      </div>
+
+      <!-- Satış Ortaklığı -->
+      <div class="tl-item">
+        <div class="tl-dot"></div>
+        <div class="tl-content">
+          <div class="tl-meta"><span class="tl-org">Satış Ortaklığı</span></div>
+          <h3 class="tl-title">Serbest Çalışan</h3>
+          <p class="tl-period">Kas 2025 — Oca 2026 · 3 ay</p>
+          <p class="tl-desc">Dijital ürün tanıtımı ve potansiyel müşteri kazanımı üzerine çalıştım. Sosyal medya ve doğrudan iletişim kanallarıyla marka mesajını hedef kitleye ilettim; müşteri adayı oluşturma süreçlerinde aktif rol üstlendim.</p>
+          <div class="tl-tags"><span>Satış</span><span>Sosyal Medya</span><span>Müşteri Kazanımı</span></div>
+        </div>
+      </div>
+
+      <!-- Blue Ember -->
+      <div class="tl-item">
+        <div class="tl-dot"></div>
+        <div class="tl-content">
+          <div class="tl-meta"><span class="tl-org">Blue Ember Organization</span></div>
+          <h3 class="tl-title">Satış ve Pazarlama Temsilcisi</h3>
+          <p class="tl-period">Ara 2025 — Şub 2026 · 3 ay · Bursa, Uzaktan · Sözleşmeli</p>
+          <div class="tl-tags"><span>Satış</span><span>Pazarlama</span><span>Müşteri Bulma</span></div>
+        </div>
+      </div>
+
+      <!-- Campus Arc -->
+      <div class="tl-item">
+        <div class="tl-dot"></div>
+        <div class="tl-content">
+          <div class="tl-meta"><span class="tl-org">Campus Arc</span></div>
+          <h3 class="tl-title">Campus Arc Ambassador</h3>
+          <p class="tl-period">Eki 2025 — Şub 2026 · 5 ay · Bursa, Uzaktan</p>
+          <p class="tl-desc">Kampüs topluluklarında marka elçiliği yaparak etkinlik ve iletişim faaliyetleri yürüttüm.</p>
+          <div class="tl-tags"><span>Elçilik</span><span>Etkinlik</span><span>İletişim</span></div>
+        </div>
+      </div>
+
+      <!-- Yirmi -->
+      <div class="tl-item">
+        <div class="tl-dot"></div>
+        <div class="tl-content">
+          <div class="tl-meta"><span class="tl-org">Yirmi</span></div>
+          <h3 class="tl-title">Kampüs Temsilcisi</h3>
+          <p class="tl-period">Ara 2025 — Oca 2026 · 2 ay</p>
+          <div class="tl-tags"><span>Eleştirel Düşünce</span><span>Analitik Beceriler</span></div>
+        </div>
+      </div>
+
+      <!-- Öğrenci Kariyeri -->
+      <div class="tl-item">
+        <div class="tl-dot"></div>
+        <div class="tl-content">
+          <div class="tl-meta"><span class="tl-org">Öğrenci Kariyeri</span></div>
+          <h3 class="tl-title">Kampüs Temsilcisi</h3>
+          <p class="tl-period">Ara 2025 — Oca 2026 · 2 ay · Bursa, Uzaktan</p>
+          <p class="tl-desc">ÖğrenciKariyeri'nin kampüs temsilcileri arasında yer alarak gençlere ilham verecek projeler için çalıştım.</p>
+          <div class="tl-tags"><span>Kariyer</span><span>Kampüs</span><span>Topluluk</span></div>
+        </div>
+      </div>
+
+      <!-- Etkin Kampüs — 2 rol -->
+      <div class="tl-item">
+        <div class="tl-dot"></div>
+        <div class="tl-content">
+          <div class="tl-meta"><span class="tl-org">Etkin Kampüs</span></div>
+          <div class="tl-multi-role">
+            <div class="tl-role">
+              <h3 class="tl-title">2. Derece Kampüs Temsilcisi</h3>
+              <p class="tl-period">Ara 2025 — Oca 2026 · 2 ay</p>
+              <div class="tl-tags"><span>Eleştirel Düşünce</span><span>Analitik Beceriler</span></div>
+            </div>
+            <div class="tl-role tl-role-sep">
+              <h3 class="tl-title">1. Derece Kampüs Temsilcisi</h3>
+              <p class="tl-period">Kas 2025 — Ara 2025 · 2 ay</p>
+              <p class="tl-desc">Üniversite öğrencilerini kariyer ve gelişim fırsatlarıyla buluşturan girişimler, etkinlikler ve topluluklarla bağlantı kurma. Kampüste farkındalık ve katılım artırma faaliyetleri.</p>
+              <div class="tl-tags"><span>Farkındalık</span><span>Organizasyon</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- TEGV -->
+      <div class="tl-item">
+        <div class="tl-dot"></div>
+        <div class="tl-content">
+          <div class="tl-meta"><span class="tl-org">TEGV — Türkiye Eğitim Gönüllüleri Vakfı</span></div>
+          <h3 class="tl-title">Topluluk Gönüllüsü</h3>
+          <p class="tl-period">Eki 2025 — Oca 2026 · 4 ay · Bursa, Ofiste</p>
+          <p class="tl-desc">Eğitim alanında gönüllü faaliyetler yürüterek topluma katkı sağladım.</p>
+          <div class="tl-tags"><span>Gönüllülük</span><span>Eğitim</span><span>Kar Amacı Gütmeyen</span></div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- BECERİLER -->
+  <section id="beceriler" class="reveal-section">
+    <div class="section-label">05 / Beceriler</div>
+    <div class="skills-layout">
+      <div class="skills-col">
+        <div class="skill-group">
+          <ul>
+            <li>
+              <span class="sk-dot"></span>Claude Code Alt Ajanları
+              <span class="sk-support">Claude Code ile Yazılım Geliştirme</span>
+            </li>
+            <li>
+              <span class="sk-dot"></span>AI Ethics
+              <span class="sk-support">Yapay Zeka ile Etik Çalışma Rehberi</span>
+            </li>
+            <li>
+              <span class="sk-dot"></span>Prompt Engineering
+              <span class="sk-support">Yapay Zeka ile Etik Çalışma Rehberi · Claude ile Profesyonel E-posta</span>
+            </li>
+            <li>
+              <span class="sk-dot"></span>Anthropic Claude
+              <span class="sk-support">Claude ile Profesyonel E-posta · Claude Code ile Yazılım Geliştirme</span>
+            </li>
+            <li>
+              <span class="sk-dot"></span>Yapay Zeka Araçları
+              <span class="sk-support">Claude ile Profesyonel E-posta · Claude Code ile Yazılım Geliştirme</span>
+            </li>
+            <li>
+              <span class="sk-dot"></span>İş İletişimleri
+              <span class="sk-support">Claude ile Profesyonel E-posta</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="skills-col">
+        <div class="skill-group">
+          <ul>
+            <li>
+              <span class="sk-dot"></span>Kamu Hizmeti
+              <span class="sk-support">TEGV</span>
+            </li>
+            <li>
+              <span class="sk-dot"></span>Gönüllü Çalışma
+              <span class="sk-support">TEGV</span>
+            </li>
+            <li>
+              <span class="sk-dot"></span>Kar Amaçlı Olmayan Gönüllülük
+              <span class="sk-support">TEGV</span>
+            </li>
+            <li>
+              <span class="sk-dot"></span>Yaratıcı İş
+            </li>
+            <li>
+              <span class="sk-dot"></span>Pazarlama
+              <span class="sk-support">Blue Ember</span>
+            </li>
+            <li>
+              <span class="sk-dot"></span>Potansiyel Müşteri Bulma
+              <span class="sk-support">Blue Ember</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="skills-marquee-col">
+        <div class="vert-text">BECERİLER</div>
+        <div class="skill-pills">
+          <span class="pill pill-accent">Claude Code</span>
+          <span class="pill">AI Ethics</span>
+          <span class="pill pill-accent">Anthropic</span>
+          <span class="pill">Prompt</span>
+          <span class="pill">Pazarlama</span>
+          <span class="pill pill-accent">AI Araçları</span>
+          <span class="pill">Gönüllü</span>
+          <span class="pill">İletişim</span>
+          <span class="pill">Yaratıcı</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- İŞ BİRLİKLERİ -->
+  <section id="isbirligi" class="reveal-section section-dark">
+    <div class="section-label section-label-light">06 / İş Birlikleri</div>
+    <div class="section-head">
+      <h2>Birlikte<br><em>çalışalım,</em><br>iş geliştirelim.</h2>
+    </div>
+    <div class="collab-layout">
+      <div class="collab-card">
+        <span class="collab-status"><span class="pulse-light"></span>Açık</span>
+        <h3>Satış &amp; Pazarlama</h3>
+        <p>Saha satışı, dijital pazarlama ve müşteri kazanımında destek olabilirim — birlikte rakam getirelim.</p>
+      </div>
+      <div class="collab-card">
+        <span class="collab-status"><span class="pulse-light"></span>Açık</span>
+        <h3>Yapay Zeka</h3>
+        <p>AI araçları entegrasyonu, prompt mühendisliği ve yapay zeka danışmanlığı için birlikte çalışalım.</p>
+      </div>
+      <div class="collab-card">
+        <span class="collab-status"><span class="pulse-light"></span>Açık</span>
+        <h3>Topluluk &amp; Etkinlik</h3>
+        <p>Üniversite topluluğu, sponsorluk, etkinlik organizasyonu — birlikte büyüyebileceğimiz her zemine açığım.</p>
+      </div>
+      <div class="collab-card collab-cta">
+        <h3>Bir fikrin mi var?</h3>
+        <p>Satış, pazarlama, girişimcilik — fark etmez. Beraber konuşalım.</p>
+        <a href="#iletisim" class="btn-primary magnetic">Hadi Konuşalım <span class="arrow">↗</span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERTİFİKALAR -->
+  <section id="sertifikalar" class="reveal-section">
+    <div class="section-label">07 / Sertifikalar</div>
+    <div class="section-head">
+      <h2>Lisanslar &amp;<br><em>Sertifikalar</em></h2>
+    </div>
+
+    <div class="cert-featured-label">Anthropic Sertifikaları</div>
+    <div class="cert-featured">
+      <div class="cert-card cert-anthropic">
+        <div class="cert-issuer-logo">A\</div>
+        <div class="cert-info">
+          <h4>Claude Code in Action</h4>
+          <span class="cert-issuer">Anthropic</span>
+          <span class="cert-date">Nis 2026</span>
+        </div>
+      </div>
+      <div class="cert-card cert-anthropic">
+        <div class="cert-issuer-logo">A\</div>
+        <div class="cert-info">
+          <h4>Claude 101</h4>
+          <span class="cert-issuer">Anthropic</span>
+          <span class="cert-date">Nis 2026</span>
+        </div>
+      </div>
+      <div class="cert-card cert-anthropic">
+        <div class="cert-issuer-logo">A\</div>
+        <div class="cert-info">
+          <h4>Introduction to Claude Cowork</h4>
+          <span class="cert-issuer">Anthropic</span>
+          <span class="cert-date">Nis 2026</span>
+        </div>
+      </div>
+      <div class="cert-card cert-anthropic">
+        <div class="cert-issuer-logo">A\</div>
+        <div class="cert-info">
+          <h4>AI Fluency for Educators</h4>
+          <span class="cert-issuer">Anthropic</span>
+          <span class="cert-date">Nis 2026</span>
+        </div>
+      </div>
+      <div class="cert-card cert-anthropic">
+        <div class="cert-issuer-logo">A\</div>
+        <div class="cert-info">
+          <h4>AI Fluency for Students</h4>
+          <span class="cert-issuer">Anthropic</span>
+          <span class="cert-date">Nis 2026</span>
+        </div>
+      </div>
+      <div class="cert-card cert-anthropic">
+        <div class="cert-issuer-logo">A\</div>
+        <div class="cert-info">
+          <h4>AI Fluency for Nonprofits</h4>
+          <span class="cert-issuer">Anthropic</span>
+          <span class="cert-date">Nis 2026</span>
+        </div>
+      </div>
+      <div class="cert-card cert-anthropic">
+        <div class="cert-issuer-logo">A\</div>
+        <div class="cert-info">
+          <h4>AI Fluency Framework &amp; Foundations</h4>
+          <span class="cert-issuer">Anthropic</span>
+          <span class="cert-date">Nis 2026</span>
+        </div>
+      </div>
+      <div class="cert-card cert-anthropic">
+        <div class="cert-issuer-logo">A\</div>
+        <div class="cert-info">
+          <h4>Teaching the AI Fluency Framework</h4>
+          <span class="cert-issuer">Anthropic</span>
+          <span class="cert-date">Nis 2026</span>
+        </div>
+      </div>
+      <div class="cert-card cert-anthropic">
+        <div class="cert-issuer-logo">A\</div>
+        <div class="cert-info">
+          <h4>AI Capabilities and Limitations</h4>
+          <span class="cert-issuer">Anthropic</span>
+          <span class="cert-date">Nis 2026</span>
+        </div>
+      </div>
+      <div class="cert-card cert-anthropic">
+        <div class="cert-issuer-logo">A\</div>
+        <div class="cert-info">
+          <h4>Introduction to Agent Skills</h4>
+          <span class="cert-issuer">Anthropic</span>
+          <span class="cert-date">Nis 2026</span>
+        </div>
+      </div>
+      <div class="cert-card cert-anthropic">
+        <div class="cert-issuer-logo">A\</div>
+        <div class="cert-info">
+          <h4>Introduction to Model Context Protocol</h4>
+          <span class="cert-issuer">Anthropic</span>
+          <span class="cert-date">Nis 2026</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="cert-featured-label" style="margin-top:3rem;">Diğer Sertifikalar &amp; Etkinlikler</div>
+    <div class="cert-grid">
+      <div class="cert-item"><span class="cert-dot"></span><div><p class="ci-name">Yapay Zeka ile Hybrid'leşmek</p><p class="ci-org">Hybrid Akademi · Oca 2026</p></div></div>
+      <div class="cert-item"><span class="cert-dot"></span><div><p class="ci-name">Yapay Zeka İçerik Üreticiliği</p><p class="ci-org">GoIT Türkiye · Oca 2026</p></div></div>
+      <div class="cert-item"><span class="cert-dot"></span><div><p class="ci-name">TEDxBUU</p><p class="ci-org">TEDxBUU · Mar 2026</p></div></div>
+      <div class="cert-item"><span class="cert-dot"></span><div><p class="ci-name">Career</p><p class="ci-org">QNB Group · Mar 2026</p></div></div>
+      <div class="cert-item"><span class="cert-dot"></span><div><p class="ci-name">FIN-E SUMMIT</p><p class="ci-org">Öğrenci Kariyeri · Şub 2026</p></div></div>
+      <div class="cert-item"><span class="cert-dot"></span><div><p class="ci-name">Girişimcilik</p><p class="ci-org">Etkin Kampüs · Oca 2026</p></div></div>
+      <div class="cert-item"><span class="cert-dot"></span><div><p class="ci-name">AB Destekli Projeler için Canva</p><p class="ci-org">Etkin Kampüs · Şub 2026</p></div></div>
+      <div class="cert-item"><span class="cert-dot"></span><div><p class="ci-name">Proje Yazma</p><p class="ci-org">Öğrenci Kariyeri · Ara 2025</p></div></div>
+      <div class="cert-item"><span class="cert-dot"></span><div><p class="ci-name">14. Girişimcilik ve İnovasyon Zirvesi</p><p class="ci-org">BUÜ İşletme Topluluğu · Kas 2025</p></div></div>
+      <div class="cert-item"><span class="cert-dot"></span><div><p class="ci-name">Girişimciliğin Yol Haritası</p><p class="ci-org">Uludağ Genç Girişimciler · Kas 2025</p></div></div>
+      <div class="cert-item"><span class="cert-dot"></span><div><p class="ci-name">Google Developers Group Bursa</p><p class="ci-org">GDG Bursa · Ara 2025</p></div></div>
+      <div class="cert-item"><span class="cert-dot"></span><div><p class="ci-name">CV Hazırlama Eğitimi</p><p class="ci-org">UUIKT · Eki 2025</p></div></div>
+    </div>
+  </section>
+
+  <!-- İLETİŞİM -->
+  <section id="iletisim" class="reveal-section">
+    <div class="section-label">08 / İletişim</div>
+    <div class="contact-layout">
+      <div class="contact-big">
+        <h2>Birlikte<br>bir şeyler<br><em>yapalım.</em></h2>
+      </div>
+      <div class="contact-right">
+        <p>Yapay zeka, projeler veya iş birliği için ulaşın. Her mesajı okurum.</p>
+        <a href="mailto:faruk.33ahmet@gmail.com" class="btn-contact magnetic">
+          faruk.33ahmet@gmail.com <span>↗</span>
+        </a>
+        <div class="contact-socials">
+          <a href="https://github.com/faruk33ahmet-doA" target="_blank" class="social-row">
+            <span class="social-platform">GitHub</span>
+            <span class="social-handle">faruk33ahmet-doA ↗</span>
+          </a>
+          <a href="https://www.linkedin.com/in/ahmetfarukdogan/" target="_blank" class="social-row">
+            <span class="social-platform">LinkedIn</span>
+            <span class="social-handle">ahmetfarukdogan ↗</span>
+          </a>
+          <a href="https://www.instagram.com/ahmet.farukk06" target="_blank" class="social-row">
+            <span class="social-platform">Instagram</span>
+            <span class="social-handle">ahmet.farukk06 ↗</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <span>© 2026 Ahmet Faruk Doğan</span>
+    <span class="footer-mid">Bursa, Türkiye</span>
+    <span>Yapay zeka ile inşa edildi</span>
+    <button id="adminLoginBtn" class="admin-link" aria-label="Admin Girişi">· admin ·</button>
+  </footer>
+
+  <!-- ADMIN LOGIN MODAL -->
+  <div class="modal-overlay" id="adminLoginModal" hidden>
+    <div class="modal-card">
+      <button class="modal-close" data-close>×</button>
+      <div class="modal-eyebrow">Admin Girişi</div>
+      <h3 class="modal-title">Yazı Eklemek için <em>Şifre</em></h3>
+      <form id="adminLoginForm" autocomplete="off">
+        <input type="password" id="adminPwd" placeholder="•••••••" required />
+        <button type="submit" class="btn-primary">Giriş Yap <span class="arrow">↗</span></button>
+        <p class="modal-error" id="adminError" hidden>Şifre yanlış.</p>
+      </form>
+    </div>
+  </div>
+
+  <!-- ADMIN PANEL MODAL -->
+  <div class="modal-overlay" id="adminPanelModal" hidden>
+    <div class="modal-card modal-wide">
+      <button class="modal-close" data-close>×</button>
+      <div class="modal-eyebrow">Admin Paneli · Yeni Yazı</div>
+      <h3 class="modal-title">Bloga <em>Yazı Ekle</em></h3>
+      <form id="postForm" autocomplete="off">
+        <label class="field">
+          <span>Başlık</span>
+          <input type="text" id="postTitle" placeholder="Yazının başlığı" required />
+        </label>
+        <label class="field">
+          <span>Kısa özet</span>
+          <textarea id="postSummary" rows="2" placeholder="Bir-iki cümlelik özet" required></textarea>
+        </label>
+        <label class="field">
+          <span>İçerik</span>
+          <textarea id="postBody" rows="6" placeholder="Yazının tam metni..."></textarea>
+        </label>
+        <label class="field">
+          <span>Kapak görseli (küçük)</span>
+          <input type="file" id="postImage" accept="image/*" />
+        </label>
+        <div class="field-row">
+          <label class="field">
+            <span>Okuma süresi</span>
+            <input type="text" id="postReadTime" placeholder="3 dk okuma" />
+          </label>
+          <label class="field">
+            <span>Tarih</span>
+            <input type="text" id="postDate" placeholder="02 May 2026" />
+          </label>
+        </div>
+        <div class="modal-actions">
+          <button type="button" class="btn-outline" id="logoutBtn">Çıkış</button>
+          <button type="submit" class="btn-primary">Yayınla <span class="arrow">↗</span></button>
+        </div>
+      </form>
+      <div class="admin-existing">
+        <h4>Mevcut Kullanıcı Yazıları</h4>
+        <ul id="userPostList"><li class="empty">Henüz yazı eklemedin.</li></ul>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
